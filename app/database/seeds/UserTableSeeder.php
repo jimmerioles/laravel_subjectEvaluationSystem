@@ -12,26 +12,40 @@ class UserTableSeeder extends Seeder {
     {
         DB::table('users')->truncate();
 
-        User::create([
-            'email' => 'jimzter@gmail.com',
-            'name' => 'jimzter merioles',
-            'password' => 'jimzter',
-        ]);
-        $this->command->info('Added user 1');
+        $users = [
+            [
+                'email'     => 'jimzter@gmail.com',
+                'password'  => Hash::make('jimzter'),
+                'firstName' => 'jim wisley',
+                'lastName'  => 'merioles',
+                'age'       =>  25,
+                'address'   => '4508 nivel hills lahug, cebu city',
+            ],
+            [
+                'email'     => 'slinky@gmail.com',
+                'password'  => Hash::make('slinky'),
+                'firstName' => 'slinky',
+                'lastName'  => 'doo',
+                'age'       => 3,
+                'address'   => '4508 nivel hill lahug, cebu city'
+            ],
+            [
+                'email'     => 'maria@gmail.com',
+                'password'  => Hash::make('banana'),
+                'firstName' => 'maria',
+                'lastName'  => 'banana',
+                'age'       => 21,
+                'address'   => 'vistabella, lapu lapu city'
+            ],
+        ];
 
-        User::create([
-            'email' => 'slinky@gmail.com',
-            'name' => 'slinky doo',
-            'password' => Hash::make('slinky'),
-        ]);
-        $this->command->info('Added user 2');
+        foreach($users as $user)
+        {
+            User::create($user);
+            $this->command->info('User: '.$user['firstName'].' added!');
+        }
 
-        User::create([
-            'email' => 'maria@gmail.com',
-            'name' => 'maria banana',
-            'password' => Hash::make('banana'),
-        ]);
-        $this->command->info('Added user 3');
+        $this->command->info('ALL USERS ADDED!');
     }
 
 }

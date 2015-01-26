@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="">
 
-    <title>Cover Template for Bootstrap</title>
+    <title>Subject Evaluation System</title>
 
     <!-- Bootstrap core CSS -->
     {{ HTML::style('packages/twitterbootstrap/css/bootstrap.min.css') }}
@@ -27,20 +27,20 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
+              <h3 class="masthead-brand">Subject Evaluation System</h3>
               <ul class="nav masthead-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Credits</a></li>
               </ul>
             </div>
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <h1 class="cover-heading">Welcome, Feast Your Eyes!</h1>
+            <p class="lead">Surprisingly, indeed. This alignment has only been pulled by an evil star. All the alarms will be lost in powerdrains like deaths in futuresSonic showers malfunction with adventure!</p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+              <a href="#" class="btn btn-lg btn-default">Login</a>
             </p>
           </div>
 
@@ -59,8 +59,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
+    {{ HTML::script('packages/jQuery/jquery-2.1.1.min.js') }}
+    {{ HTML::script('packages/twitterbootstrap/js/bootstrap.min.js') }}
   </body>
 </html>
