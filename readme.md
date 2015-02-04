@@ -1,9 +1,3 @@
 ## Subject Evaluation System
 
-This is our SoftEng project.
-
-wahtasf
-sfsfsdf
-assdf
-asdsf
-asdfasdf
+This is our SoftEng project. This is an online subject evaluation system.
