@@ -1,3 +1,3 @@
 ## Subject Evaluation System
 
-This is our SoftEng school project.
+This is our SoftEng project.
